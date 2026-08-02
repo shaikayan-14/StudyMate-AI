@@ -1,2 +1,26 @@
-# StudyMate-AI
-StudyMate AI is an AI-powered student productivity platform that helps students manage attendance, CGPA, daily tasks, focus sessions, and academic queries using Google's Gemini AI. Built with Flask, SQLite, HTML, CSS, and JavaScript, it offers a modern glassmorphism interface and an intelligent AI assistant to improve learning and productivity.
+# 🤖 StudyMate AI
+
+StudyMate AI is a modern AI-powered student productivity platform designed to help students stay organized and improve their academic performance. It combines essential student tools with Google's Gemini AI to provide an intelligent learning experience.
+
+## ✨ Features
+
+- 🤖 Gemini AI Study Assistant
+- 📊 Attendance Calculator
+- 🎓 CGPA Calculator
+- ✅ Smart Todo Manager
+- ⏱ Pomodoro Focus Timer
+- 🔐 Secure Login & Registration
+- 💎 Modern Glassmorphism UI
+- 📱 Responsive Design
+- 🗄️ SQLite Database
+- ☁️ Ready for Render Deployment
+
+## 🛠️ Tech Stack
+
+- Python
+- Flask
+- SQLite
+- HTML5
+- CSS3
+- JavaScript
+- Google Gemini AI
