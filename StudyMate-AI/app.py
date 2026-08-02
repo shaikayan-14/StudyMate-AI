@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, session
 
 from config import SECRET_KEY
 
-from gemini_ai import ask_gemini
+from utils.gemini_ai import ask_gemini
 
 from database.database import (
     create_database,

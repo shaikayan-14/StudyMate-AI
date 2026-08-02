@@ -1,11 +1,16 @@
-import google.generativeai as genai
+try:
+    import google.generativeai as genai  # type: ignore
+except ImportError:
+    genai = None
+
 from config import GEMINI_API_KEY
 
 # Configure Gemini
-genai.configure(api_key=GEMINI_API_KEY)
+if genai is not None:
+    genai.configure(api_key=GEMINI_API_KEY)
 
 # Load Model
-model = genai.GenerativeModel("gemini-1.5-flash")
+model = genai.GenerativeModel("gemini-1.5-flash") if genai is not None else None
 
 
 def ask_gemini(question):
