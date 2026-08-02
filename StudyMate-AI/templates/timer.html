@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Focus Timer - StudyMate AI</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+
+</head>
+
+
+<body>
+
+
+<div class="dashboard">
+
+
+<header>
+
+<div class="logo">
+🤖 StudyMate AI
+</div>
+
+
+<div class="profile">
+⏱ Focus Timer
+</div>
+
+</header>
+
+
+
+
+<div class="content">
+
+
+<section class="ai-card timer-card">
+
+
+<h1>
+⏱ Pomodoro Focus Timer
+</h1>
+
+
+
+<div class="time-setting">
+
+
+<input 
+type="number"
+id="minutes"
+placeholder="Enter minutes"
+value="25"
+min="1">
+
+
+<button onclick="setTime()">
+Set Time
+</button>
+
+
+</div>
+
+
+
+
+<h2 id="timer">
+25:00
+</h2>
+
+
+
+
+
+<div class="timer-buttons">
+
+
+<button onclick="startTimer()">
+▶ Start
+</button>
+
+
+
+<button onclick="pauseTimer()">
+⏸ Pause
+</button>
+
+
+
+<button onclick="resetTimer()">
+🔄 Reset
+</button>
+
+
+
+</div>
+
+
+
+
+<p>
+Customize your focus session and complete your goals 🚀
+</p>
+
+
+
+</section>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+<script src="{{ url_for('static', filename='js/timer.js') }}"></script>
+
+
+</body>
+
+</html>
