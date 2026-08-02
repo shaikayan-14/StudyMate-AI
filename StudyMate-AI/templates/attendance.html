@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Attendance - StudyMate AI</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+
+</head>
+
+
+<body>
+
+
+<div class="dashboard">
+
+
+<header>
+
+<div class="logo">
+🤖 StudyMate AI
+</div>
+
+<div class="profile">
+📊 Attendance Tracker
+</div>
+
+</header>
+
+
+
+<div class="content">
+
+
+<section class="ai-card">
+
+
+<h1>📊 Attendance Calculator</h1>
+
+
+<form method="POST">
+
+
+<input 
+type="text"
+name="subject"
+placeholder="Subject Name"
+required>
+
+
+<input 
+type="number"
+name="total"
+placeholder="Total Classes"
+required>
+
+
+<input 
+type="number"
+name="present"
+placeholder="Attended Classes"
+required>
+
+
+<button type="submit">
+Calculate
+</button>
+
+
+</form>
+
+
+{% if percentage %}
+
+<div class="result-card">
+
+<h2>📈 Attendance Analysis</h2>
+
+<h1>{{ percentage }}%</h1>
+
+
+{% if percentage >= 75 %}
+
+<p class="success">
+✅ Great! Attendance is above requirement.
+</p>
+
+{% else %}
+
+<p class="warning">
+⚠️ Attendance is below 75%. Improve your attendance.
+</p>
+
+{% endif %}
+
+
+</div>
+
+{% endif %}
+
+</section>
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>
