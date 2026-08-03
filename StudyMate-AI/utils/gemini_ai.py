@@ -1,4 +1,4 @@
-try:
+    try:
     import google.generativeai as genai  # type: ignore
 except ImportError:
     genai = None
@@ -19,7 +19,6 @@ def ask_gemini(question):
     """
 
     try:
-
         prompt = f"""
 You are StudyMate AI, an intelligent academic assistant.
 
@@ -33,6 +32,9 @@ Rules:
 Student Question:
 {question}
 """
+
+        if model is None:
+            return "⚠️ Gemini is not available. Please install the Google Generative AI package."
 
         response = model.generate_content(prompt)
 
