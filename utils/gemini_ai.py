@@ -4,7 +4,7 @@ from config import GEMINI_API_KEY
 # Configure Gemini only if API key exists
 if GEMINI_API_KEY:
     genai.configure(api_key=GEMINI_API_KEY)
-    model = genai.GenerativeModel("gemini-1.5-flash")
+    model = genai.GenerativeModel("gemini-2.5-flash")
 else:
     model = None
 
